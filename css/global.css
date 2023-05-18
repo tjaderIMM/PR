@@ -40,8 +40,7 @@
 
 #calculator-btn:hover {
 	color: #fff;
-	background-color: #00000098;
-	border-color: #00000098;
+	
 }
 
 #calculator-msg {
@@ -303,5 +302,45 @@ div .header {
 	}
 	#text-bottom {
 		font-size: 25px;
+	}
+	#calculator-msg {
+		width: 600px;
+		max-width: 100%;
+		margin-top: 25px;
+	
+	}
+	
+	#calculator-msg #msg {
+		text-align: left;
+		color: #5000b5;
+	}
+	
+	#calculator-msg #result {
+		font-size: 30px;
+		font-weight: bold;
+	
+		text-align: center;
+	}
+	
+	#calculator-msg.error #msg {
+		color: red;
+	}
+	
+	
+}
+@media (max-width: 770px) {  
+	#msg {
+		font-size: 12px;
+		
+	}
+}
+@media (max-width: 460px) {  
+	#msg {
+		font-size: 9px;
+	}
+}
+@media (max-width: 360px) {  
+	#msg {
+		font-size: 7px;
 	}
 }
