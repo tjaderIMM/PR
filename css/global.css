@@ -274,8 +274,12 @@ div .header {
 .text-info1 {
 	color: #58d1e3;
 }
-
-
+#button-down {
+	border-radius: 16px; font-size: 35px; padding: 10px 20px
+}
+#text-bottom {
+	font-size: 40px;
+}
 
 
 @media (max-width: 1000px) {  
@@ -288,5 +292,16 @@ div .header {
 	}
 	.min-center {
 		text-align: center;
+	}
+	#header-top {
+		font-size: 35px;
+	}
+	#button-down {
+		border-radius: 16px; 
+		font-size: 10px; 
+		
+	}
+	#text-bottom {
+		font-size: 25px;
 	}
 }
