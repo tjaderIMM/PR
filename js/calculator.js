@@ -1,5 +1,5 @@
 (function () {
-	const bootonMenu = '<br><div class="d-flex justify-content-between remove-js" ><button class="btn btn-secondary btn-lg active" id="remove">Wyczyść  <img src="./img/x.png" alt="" class="img-fluid" style="height:12px"></button><button class="btn btn-secondary btn-lg active copy" id="copy">Skopiuj  <img src="./img/copy-icon.png" alt="" class="img-fluid" style="height:15px" ></button></div>'
+	const bootonMenu = '<br><div class="d-flex justify-content-between" ><button class="btn btn-secondary btn-lg active" id="remove">Wyczyść  <img src="./img/x.png" alt="" class="img-fluid" style="height:12px"></button><button class="btn btn-secondary btn-lg active copy" id="copy">Skopiuj  <img src="./img/copy-icon.png" alt="" class="img-fluid" style="height:15px" ></button></div>'
 	const k1524 = 1788347; // 22 r. 1870700 
 	const m1524 = 1870519; // 22 r. 1960700
 
@@ -220,9 +220,17 @@
 			var copyText = document.getElementById("calculator-input");
 			copyText.value = '';
 		};
+		document.querySelector('#removejs').onclick = function () {
+			var copyText = document.getElementById("calculator-input");
+			copyText.value = '';
+		};
 
 
 	});
+	document.querySelector('#removejs').onclick = function () {
+		var copyText = document.getElementById("calculator-input");
+		copyText.value = '';
+	};
 
 	$('#calculator-input').on('paste', function () {
 		var element = this;
