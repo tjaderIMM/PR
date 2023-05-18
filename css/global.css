@@ -279,7 +279,92 @@ div .header {
 #text-bottom {
 	font-size: 40px;
 }
+#b {
+	font-size: 30px;
+}
+.wrapper {
+	text-transform: uppercase;
+	color: #555;
+	cursor: help;
 
+	
+	
+	position: relative;
+	text-align: center;
+	
+  }
+  
+  .wrapper .tooltip {
+	
+	bottom: 100%;
+	background-color: #fff;
+	display: block;
+	
+	margin-bottom: 15px;
+	opacity: 0;
+	padding: 20px;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(10px);
+	
+	transition: all .25s ease-out;
+	font-size: 15px;
+	
+	color: #141780;
+	
+	font-family: "Montserrat";
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  }
+  
+  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+  .wrapper .tooltip:before {
+	bottom: -20px;
+	content: " ";
+	display: block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	
+  }
+  
+  /* CSS Triangles - see Trevor's post */
+  .wrapper .tooltip:after {
+	border-radius: 15px;
+	bottom: -10px;
+	content: " ";
+	height: 0;
+	left: 50%;
+	
+	position: absolute;
+	
+	width: 0;
+  }
+  .tooltip {
+  
+  width: 100px;
+  }
+  
+  .wrapper:hover .tooltip {
+	opacity: 0.9;
+	pointer-events: auto;
+	border-radius: 12px;
+	transform: translateY(0px);
+  }
+  
+  /* IE can just show/hide with no transition */
+  .lte8 .wrapper .tooltip {
+	display: none;
+  }
+  
+  .lte8 .wrapper:hover .tooltip {
+	display: block;
+	
+  }
 
 @media (max-width: 1000px) {  
 	.pricing1 {
@@ -325,7 +410,9 @@ div .header {
 	#calculator-msg.error #msg {
 		color: red;
 	}
-	
+	#b {
+		font-size: 25px;
+	}
 	
 }
 @media (max-width: 770px) {  
@@ -338,9 +425,12 @@ div .header {
 	#msg {
 		font-size: 9px;
 	}
+	#b {
+		font-size: 20px;
+	}
 }
-@media (max-width: 360px) {  
+/* @media (max-width: 360px) {  
 	#msg {
 		font-size: 7px;
 	}
-}
+} */

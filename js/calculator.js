@@ -1,5 +1,5 @@
 (function () {
-	const bootonMenu = '<br><div class="d-flex justify-content-between remove-js" ><button class="btn btn-secondary btn-lg active" id="remove">Wyczyść<img src="./img/x.png" alt="" class="img-fluid"></button><button class="btn btn-secondary btn-lg active copy" id="copy">Skopiuj<img src="./img/copy-icon.png" alt="" class="img-fluid"></button></div>'
+	const bootonMenu = '<br><div class="d-flex justify-content-between remove-js" ><button class="btn btn-secondary btn-lg active" id="remove">Wyczyść  <img src="./img/x.png" alt="" class="img-fluid" style="height:12px"></button><button class="btn btn-secondary btn-lg active copy" id="copy">Skopiuj  <img src="./img/copy-icon.png" alt="" class="img-fluid" style="height:15px" ></button></div>'
 	const k1524 = 1788347; // 22 r. 1870700 
 	const m1524 = 1870519; // 22 r. 1960700
 
@@ -201,9 +201,9 @@
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
 
 			if (Math.round(result) < 1) {
-				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + 'w badanym okresie<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii.' + '<br><b>średnio ' + parseInt(Math.round(count / val)) + ' raz[y]</b><br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
+				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii.' + '<br><b id="b">średnio ' + parseInt(Math.round(count / val)) + ' raz[y]</b><br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
 			} else {
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + 'w badanym okresie<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii <b>średnio' + Math.round(result) + '</b> raz[y]<br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii <b id="b">średnio' + Math.round(result) + '</b> raz[y]<br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');

@@ -95,7 +95,7 @@
                     <p id="header-top" class="header display-4  font-weight-bold">
                         Zmierz PR. <br> <span>Nowy standard</span> mierzenia<br> efektywności PR w Polsce.
                     </p>
-                    <p  class="header h3 font-weight-normal"  style="line-height: 1.6;">
+                    <p class="header h3 font-weight-normal" style="line-height: 1.6;">
                         Przedstawiamy kalkulator do obliczania zasięgu Twoich kampanii. Zapraszamy do użytkowania!<br>
                         Jeśli masz pomysł jak go ulepszyć: napisz do nas.<br>
                         Z góry dziękujemy za sugestie :)
@@ -178,19 +178,22 @@
                         * Dane dotyczące struktury ludności Polski pochodzą z Głównego Urzędu Statystycznego.
                     </p>
                 </div>
+                <div class="wrapper calculator">
+                    <input id="calculator-input" type="text" class="form-control " placeholder="Mój zasięg"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="tooltip" style="width: 300px">Pamiętaj, aby wpisać tutaj liczbę odpowiadającą<br> za
+                        realny zasięg, czyli
+                        liczbę potencjalnych<br> kontaktów z materiami, a nie ich źródłem!</div>
+                </div>
 
-                <input id="calculator-input" type="text" class="form-control" placeholder="Mój zasięg"
-                    aria-label="Recipient's username" aria-describedby="basic-addon2"
-                    data-toggle="tooltip" data-placement="top" title="Pamiętaj, aby wpisać tutaj liczbę odpowiadającą za realny zasięg, czyli liczbę potencjalnych kontaktów z materiami, a nie ich źródłem!">
 
                 <div id="calculator-filters">
                     <div class="">
                         <p class=" calculation__label"><span>Wiek:</span></p>
                         <div class="pricing1 btn-group-toggle " data-toggle="buttons">
 
-                            <label for="all-age" class="btn btn-secondary btn-lg " style="border-radius: 12px"
-                            ><input type="radio" id="all-age"
-                                    name="age-radios" autocomplete="off">wszystkie
+                            <label for="all-age" class="btn btn-secondary btn-lg " style="border-radius: 12px"><input
+                                    type="radio" id="all-age" name="age-radios" autocomplete="off">wszystkie
                             </label>
 
 
@@ -242,10 +245,22 @@
 
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-lg active" id="remove" style="border-radius: 12px">Wyczyść<img src="./img/x.png" alt=""
-                        class="img-fluid"></button>
-                <button id="calculator-btn" class="btn btn-success h1" type="button" style="border-radius: 12px">ZmierzPR</button>
-                <div id="calculator-msg" class="btn btn-secondary btn-lg active disable text-white text-center" disabled style="border-radius: 12px">
+
+                <div >
+                 
+                            <button class="btn btn-secondary  active" id="remove"
+                                style="border-radius: 12px; margin-top: 9px; margin-right: 30px;">Wyczyść <img src="./img/x.png" alt="" class="img-fluid"
+                                    style="height:12px"></button>
+                        
+                        
+                                    <button id="calculator-btn" class="btn btn-success h1" type="button"
+                                    style="border-radius: 12px">ZmierzPR</button>
+                       
+
+                </div>
+                
+                <div id="calculator-msg" class="btn btn-secondary btn-lg active disable text-white text-center" disabled
+                    style="border-radius: 12px">
                     <p id="result" class="calculator__result text-info">Twój wynik</p>
                     <p id="msg" class="calulation__message text-center text-white"></p>
 
@@ -255,7 +270,7 @@
         </div>
     </section>
 
-  
+
 
     <!-- AUTORZY -->
 
@@ -349,7 +364,7 @@
     </section>
 
 
-    
+
     <!-- Sekcja Kontakt -->
     <section id="contact" class="gray-section contact">
         <div class="container-fluid" style="padding: 50px;">
@@ -361,7 +376,8 @@
                         podzielić się
                         swoimi spostrzeżeniami odnośnie do metodologii - napisz do nas!</div>
                     <div class="text-center">
-                        <a id="button-down" href="mailto:sdobkowska@imm.com.pl" class="btn btn-primary footer_button w-50" style="">Napisz do nas</a>
+                        <a id="button-down" href="mailto:sdobkowska@imm.com.pl"
+                            class="btn btn-primary footer_button w-50" style="">Napisz do nas</a>
                     </div>
                 </div>
                 <!-- <div class="col text-center">
@@ -374,8 +390,8 @@
                 <div class="col-lg-2 text-center">
                     <img class="img-fluid" src="img/man.png" alt="">
                 </div>
-                
-                
+
+
             </div>
             <!-- <div class="row">
                 <div class="col-lg-12 text-center">
