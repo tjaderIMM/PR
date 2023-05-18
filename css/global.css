@@ -1,1 +1,436 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+#calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
+#calculator-container {
+	max-width: 100%;
+	width: 620px;
+	padding: 5px;
+}
+
+#calculator-input {
+	max-width: 100%;
+	width: 300px;
+	height: 52px;
+
+	border-color: #eee;
+	border-radius: 12px;
+	padding: 8px 20px;
+	box-shadow: none;
+	outline: none;
+	text-shadow: none;
+	border-style: solid;
+	font-size: 16px;
+}
+
+/* #calculator-btn {
+	width: 90px;
+
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	font-size: 16px;
+} */
+
+#calculator-btn:hover {
+	color: #fff;
+	
+}
+
+#calculator-msg {
+	width: 600px;
+	max-width: 100%;
+	margin-top: 25px;
+
+}
+
+#calculator-msg #msg {
+	text-align: left;
+	color: #5000b5;
+}
+
+#calculator-msg #result {
+	font-size: 30px;
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#calculator-msg.error #msg {
+	color: red;
+}
+
+.checkboxes-group {
+	display: flex;
+	flex-direction: row;
+}
+
+#calculator-filters {
+	width: 600px;
+	max-width: 100%;
+	padding: 5px
+}
+
+#calculator-filters .checkboxes-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 12px;
+
+	font-size: 14px;
+}
+
+#calculator-filters h3 {
+	margin-bottom: 25px;
+
+	font-weight: bold;
+	text-align: center;
+}
+
+#calculator-filters .checkboxes-group label {
+	width: 80px;
+	margin-bottom: 0px;
+	margin-left: 8px;
+}
+
+#calculator-filters .checkboxes-group .desc {
+	width: 80px;
+	margin: 0px;
+}
+
+#contact {
+	background-color: #58d1e3;
+}
+
+/* .button {
+	float: left;
+	margin: 0 5px 0 0;
+	width: 200px;
+	height: 80px;
+	position: relative;
+
+}
+
+.button label,
+.button input {
+	display: block;
+	position: absolute;
+	border-radius: 15px;
+	background-color: #29329f;
+	
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Montserrat";
+	text-align: center;
+}
+
+.button input[type="radio"] {
+	opacity: 0.011;
+	z-index: 100;
+}
+
+.button input[type="radio"]:checked+label {
+	background-color: #293edc;
+	border-radius: 15px;
+}
+
+.button label {
+	cursor: pointer;
+	z-index: 90;
+	line-height: 1.8em;
+} */
+
+.pricing1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.calculation__label {
+	font-size: 27px;
+	color: #58d1e3;
+	font-weight: 700;
+	
+}
+.pricing {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column
+  }
+div .footer__header {
+	color: white;
+	font-size: 57px;
+	color: #ffffff;
+	font-weight: 700;
+	
+  }
+
+  div .footer__p {
+	margin-top: 70px;
+	font-size: 32px;
+	line-height: 47px;
+	color: #141780;
+	font-weight: 300;
+	margin-bottom: 80px;
+	font-family: "Montserrat";
+	
+  }
+
+ #btn .btn-primary,
+ #btn .btn-primary:hover,
+ #btn .btn-primary:active,
+ #btn .btn-primary:visited,
+ #btn .btn-primary:focus {
+  background-color: #141780;
+  border-color: #141780;
+  font-family: "Montserrat";
+}
+
+body {
+	background: url('../img/1170_zmierzpr_landingpage-bg01.svg') right top no-repeat, url('../img/1170_zmierzpr_landingpage-bg02.png') -1200px 300px no-repeat;
+}
+
+#team {
+	background-image: url('../img/1170_zmierzpr_landingpage-bg01.svg');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 100px;
+}
+/* #clouds {
+	background: url('../img/1170_zmierzpr_landingpage-bg02.png') no-repeat;
+	position: relative;
+	z-index: -1;
+} */
+
+#pricing {
+	margin-top: -100px;
+	background-color: #141780;
+}
+
+div span {
+	color: #58d1e3;
+}
+div .header {
+	color: #141780;
+}
+#navbar .header {
+	color: #141780;
+}
+
+#team .header {
+	color: #141780;
+	
+	
+}
+
+#author-header {
+	color: #58d1e3;
+}
+
+#contact-header {
+	color: #fff;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	opacity: 0.600;
+  
+  color: #141780;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Montserrat";
+ /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	opacity: 0.600;
+  
+  color: #141780;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Montserrat";
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	opacity: 0.600;
+  
+  color: #141780;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Montserrat";
+}
+
+.text-info1 {
+	color: #58d1e3;
+}
+#button-down {
+	border-radius: 16px; font-size: 35px; padding: 10px 20px
+}
+#text-bottom {
+	font-size: 40px;
+}
+#b {
+	font-size: 30px;
+}
+.wrapper {
+	text-transform: uppercase;
+	color: #555;
+	cursor: help;
+
+	
+	
+	position: relative;
+	text-align: center;
+	
+  }
+  
+  .wrapper .tooltip {
+	
+	bottom: 100%;
+	background-color: #fff;
+	display: block;
+	
+	margin-bottom: 15px;
+	opacity: 0;
+	padding: 20px;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(10px);
+	
+	transition: all .25s ease-out;
+	font-size: 15px;
+	
+	color: #141780;
+	
+	font-family: "Montserrat";
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  }
+  
+  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+  .wrapper .tooltip:before {
+	bottom: -20px;
+	content: " ";
+	display: block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	
+  }
+  
+  /* CSS Triangles - see Trevor's post */
+  .wrapper .tooltip:after {
+	border-radius: 15px;
+	bottom: -10px;
+	content: " ";
+	height: 0;
+	left: 50%;
+	
+	position: absolute;
+	
+	width: 0;
+  }
+  .tooltip {
+  
+  width: 100px;
+  }
+  
+  .wrapper:hover .tooltip {
+	opacity: 0.9;
+	pointer-events: auto;
+	border-radius: 12px;
+	transform: translateY(0px);
+  }
+  
+  /* IE can just show/hide with no transition */
+  .lte8 .wrapper .tooltip {
+	display: none;
+  }
+  
+  .lte8 .wrapper:hover .tooltip {
+	display: block;
+	
+  }
+
+@media (max-width: 1000px) {  
+	.pricing1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.min-center {
+		text-align: center;
+	}
+	#header-top {
+		font-size: 35px;
+	}
+	#button-down {
+		border-radius: 16px; 
+		font-size: 10px; 
+		
+	}
+	#text-bottom {
+		font-size: 25px;
+	}
+	#calculator-msg {
+		width: 600px;
+		max-width: 100%;
+		margin-top: 25px;
+	
+	}
+	
+	#calculator-msg #msg {
+		text-align: left;
+		color: #5000b5;
+	}
+	
+	#calculator-msg #result {
+		font-size: 30px;
+		font-weight: bold;
+	
+		text-align: center;
+	}
+	
+	#calculator-msg.error #msg {
+		color: red;
+	}
+	#b {
+		font-size: 25px;
+	}
+	
+}
+@media (max-width: 770px) {  
+	#msg {
+		font-size: 12px;
+		
+	}
+}
+@media (max-width: 460px) {  
+	#msg {
+		font-size: 9px;
+	}
+	#b {
+		font-size: 20px;
+	}
+}
+/* @media (max-width: 360px) {  
+	#msg {
+		font-size: 7px;
+	}
+} */
