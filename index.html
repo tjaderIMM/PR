@@ -180,38 +180,40 @@
                 </div>
 
                 <input id="calculator-input" type="text" class="form-control" placeholder="Mój zasięg"
-                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    aria-label="Recipient's username" aria-describedby="basic-addon2"
+                    data-toggle="tooltip" data-placement="top" title="Pamiętaj, aby wpisać tutaj liczbę odpowiadającą za realny zasięg, czyli liczbę potencjalnych kontaktów z materiami, a nie ich źródłem!">
 
                 <div id="calculator-filters">
                     <div class="">
                         <p class=" calculation__label"><span>Wiek:</span></p>
                         <div class="pricing1 btn-group-toggle " data-toggle="buttons">
 
-                            <label for="all-age" class="btn btn-secondary btn-lg"><input type="radio" id="all-age"
+                            <label for="all-age" class="btn btn-secondary btn-lg " style="border-radius: 12px"
+                            ><input type="radio" id="all-age"
                                     name="age-radios" autocomplete="off">wszystkie
                             </label>
 
 
 
-                            <label for="1524_age" class="btn btn-secondary btn-lg active">
+                            <label for="1524_age" class="btn btn-secondary btn-lg active" style="border-radius: 12px">
                                 <input type="radio" id="1524_age" name="age-radios" checked autocomplete="off" />15-24
                             </label>
 
 
 
-                            <label for="2539_age" class="btn btn-secondary btn-lg">
+                            <label for="2539_age" class="btn btn-secondary btn-lg" style="border-radius: 12px">
                                 <input type="radio" id="2539_age" name="age-radios" autocomplete="off" />25-39
                             </label>
 
 
 
-                            <label for="4054_age" class="btn btn-secondary btn-lg">
+                            <label for="4054_age" class="btn btn-secondary btn-lg" style="border-radius: 12px">
                                 <input type="radio" id="4054_age" name="age-radios" autocomplete="off" />40-54
                             </label>
 
 
 
-                            <label for="55_age" class="btn btn-secondary btn-lg">
+                            <label for="55_age" class="btn btn-secondary btn-lg" style="border-radius: 12px">
                                 <input type="radio" id="55_age" name="age-radios" autocomplete="off" />55+
                             </label>
 
@@ -222,16 +224,16 @@
                         <p class="calculation__label"><span>Płeć:</span></p>
                         <div class="pricing1 btn-group-toggle" data-toggle="buttons">
 
-                            <label for="all-sex" class="btn btn-secondary btn-lg active">
+                            <label for="all-sex" class="btn btn-secondary btn-lg active" style="border-radius: 12px">
                                 <input type="radio" id="all-sex" name="sex-radios" checked
                                     autocomplete="off" />wszystkie
                             </label>
 
-                            <label for="women" class="btn btn-secondary btn-lg">
+                            <label for="women" class="btn btn-secondary btn-lg" style="border-radius: 12px">
                                 <input type="radio" id="women" name="sex-radios" autocomplete="off" />kobiety
                             </label>
 
-                            <label for="men" class="btn btn-secondary btn-lg">
+                            <label for="men" class="btn btn-secondary btn-lg" style="border-radius: 12px">
                                 <input type="radio" id="men" name="sex-radios" autocomplete="off" />mężczyźni
                             </label>
 
@@ -240,10 +242,10 @@
 
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-lg active" id="remove">Wyczyść<img src="./img/x.png" alt=""
+                <button class="btn btn-secondary btn-lg active" id="remove" style="border-radius: 12px">Wyczyść<img src="./img/x.png" alt=""
                         class="img-fluid"></button>
-                <button id="calculator-btn" class="btn btn-success h1" type="button">ZmierzPR</button>
-                <div id="calculator-msg" class="btn btn-secondary btn-lg active disable text-white" disabled>
+                <button id="calculator-btn" class="btn btn-success h1" type="button" style="border-radius: 12px">ZmierzPR</button>
+                <div id="calculator-msg" class="btn btn-secondary btn-lg active disable text-white" disabled style="border-radius: 12px">
                     <p id="result" class="calculator__result text-info">Twój wynik</p>
                     <p id="msg" class="calulation__message text-center text-white"></p>
 
@@ -355,21 +357,20 @@
     </section>
 
 
-
+    
     <!-- Sekcja Kontakt -->
     <section id="contact" class="gray-section contact">
-        <div class="container">
+        <div class="container-fluid" style="padding: 50px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg text-justify" id="btn">
+                <div class="col-lg" id="btn">
 
                     <h1 id="contact-header" class="min-center">Kontakt</h1>
-                    <div class="footer__p text-center" style="letter-spacing: 2px">Jeśli masz pytania związane z projektem lub chcesz
+                    <div class="footer__p " style="font-size: 40px;">Jeśli masz pytania związane z projektem lub chcesz
                         podzielić się
                         swoimi spostrzeżeniami odnośnie do metodologii - napisz do nas!</div>
                     <div class="text-center">
-                        <a href="mailto:sdobkowska@imm.com.pl" class="btn btn-primary footer_button ">Napisz do nas</a>
+                        <a href="mailto:sdobkowska@imm.com.pl" class="btn btn-primary footer_button w-50" style="border-radius: 16px; font-size: 35px; padding: 10px 20px">Napisz do nas</a>
                     </div>
-
                 </div>
                 <!-- <div class="col text-center">
 
@@ -378,10 +379,11 @@
                     <p>
 
                 </div> -->
-                <div class="col-lg">
+                <div class="col-lg-2 text-center">
                     <img class="img-fluid" src="img/man.png" alt="">
                 </div>
-
+                
+                
             </div>
             <!-- <div class="row">
                 <div class="col-lg-12 text-center">
