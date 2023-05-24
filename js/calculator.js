@@ -201,9 +201,9 @@
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
 
 			if (Math.round(result) < 1) {
-				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii.' + '<br><b id="b">średnio ' + parseInt(Math.round(count / val)) + ' raz[y]</b><br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
+				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii.' + '<br><b id="b">średnio <br>' + parseInt(Math.round(count / val)) + ' raz[y]</b> ' + bootonMenu;
 			} else {
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii <b id="b">średnio' + Math.round(result) + '</b> raz[y]<br>w okresie, którego dotyczy podany zasięg. ' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii <b id="b">średnio <br>' + Math.round(result) + '</b> raz[y]' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');
