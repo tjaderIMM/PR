@@ -274,7 +274,7 @@ div .header {
 	color: #58d1e3;
 }
 #button-down {
-	border-radius: 16px; font-size: 35px; padding: 10px 20px
+	border-radius: 16px; font-size: 35px; padding: 10px 20px;
 }
 #text-bottom {
 	font-size: 40px;
@@ -350,7 +350,7 @@ div .header {
   }
   
   .wrapper:hover .tooltip {
-	opacity: 0.9;
+	opacity: 1;
 	pointer-events: auto;
 	border-radius: 12px;
 	transform: translateY(0px);
@@ -365,6 +365,13 @@ div .header {
 	display: block;
 	
   }
+#calculator-btn {
+	font-size: 35px;
+	padding: 10px 20px;
+	border-radius: 16px;
+	font-weight: 700;
+}
+
 
 @media (max-width: 1000px) {  
 	.pricing1 {
