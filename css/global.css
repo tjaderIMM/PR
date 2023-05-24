@@ -371,7 +371,9 @@ div .header {
 	border-radius: 16px;
 	font-weight: 700;
 }
-
+#header-top {
+	font-size: 50px;
+}
 
 @media (max-width: 1000px) {  
 	.pricing1 {
