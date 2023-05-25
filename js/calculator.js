@@ -201,7 +201,7 @@
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
 
 			if (Math.round(result) < 1) {
-				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii.' + '<br><b id="b">średnio <br>' + parseInt(Math.round(count / val)) + ' raz[y]</b> ' + bootonMenu;
+				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + parseInt(Math.round(count / val)) + ' raz[y]</b> ' + bootonMenu;
 			} else {
 				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii <b id="b">średnio <br>' + Math.round(result) + '</b> raz[y]' + bootonMenu;
 			};
@@ -210,8 +210,10 @@
 		};
 		document.querySelector('#copy').onclick = function () {
 
-			let text = document.getElementById('msg').innerHTML.slice(0,document.getElementById('msg').innerHTML.search('zasięg.')+7) ;
-			text =text.replace(/(<([^>]+)>)/gi, "");
+			let text = document.getElementById('msg').innerHTML.slice(0,document.getElementById('msg').innerHTML.search('Wyczyść')) ;
+			text = text.replace(/(<([^>]+)>)/gi, "");
+			console.log("hej")
+			console.log(text);
 			navigator.clipboard.writeText(text);
 					
 		}
@@ -219,19 +221,12 @@
 		document.querySelector('#remove').onclick = function () {
 			var copyText = document.getElementById("calculator-input");
 			copyText.value = '';
-		};
-		document.querySelector('#removejs').onclick = function () {
-			var copyText = document.getElementById("calculator-input");
-			copyText.value = '';
+			document.getElementById('msg').innerHTML = '';
 		};
 
 
 	});
-	document.querySelector('#removejs').onclick = function () {
-		var copyText = document.getElementById("calculator-input");
-		copyText.value = '';
-	};
-
+	
 	$('#calculator-input').on('paste', function () {
 		var element = this;
 		setTimeout(function () {
