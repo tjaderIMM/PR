@@ -21,7 +21,7 @@
 	const allSexInput = $('#all-sex');
 	const womenInput = $('#women');
 	const menInput = $('#men');
-
+	let ostatini = null;
 	function updateAgeMainCheckbox() {
 		var fchecked = fInput.prop('checked');
 		var schecked = sInput.prop('checked');
@@ -234,5 +234,55 @@
 
 			$(element).val(text.replace(/\s/g, ' '));
 		}, 10);
+	});
+	$('#all-age').on('change', function () {
+
+
+		
+		fInput.prop('checked', false);
+		sInput.prop('checked', false);
+		tInput.prop('checked', false); 
+		lInput.prop('checked', false);
+		document.getElementById('1524_age').parentElement.classList.remove('active');
+		document.getElementById('2539_age').parentElement.classList.remove('active');
+		document.getElementById('4054_age').parentElement.classList.remove('active');
+		document.getElementById('55_age').parentElement.classList.remove('active');
+
+		
+		
+	});
+	$('#1524_age').on('change', function () {
+
+
+		allAgeInput.prop('checked', false);
+		document.getElementById('all-age').parentElement.classList.remove('active');
+
+		
+		
+	});
+	$('#2539_age').on('change', function () {
+
+
+		
+
+		allAgeInput.prop('checked', false);
+		document.getElementById('all-age').parentElement.classList.remove('active');
+		
+	});
+	$('#4054_age').on('change', function () {
+
+
+		
+
+		allAgeInput.prop('checked', false);
+		document.getElementById('all-age').parentElement.classList.remove('active');
+		
+	});
+	$('#55_age').on('change', function () {
+
+
+		allAgeInput.prop('checked', false);
+		document.getElementById('all-age').parentElement.classList.remove('active');
+		
 	});
 }());
