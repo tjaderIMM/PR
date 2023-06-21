@@ -201,10 +201,7 @@ body {
 }
 
 #team {
-	background-image: url('../img/1170_zmierzpr_landingpage-bg01.svg');
-	background-position: right top;
-	background-repeat: no-repeat;
-	background-size: contain;
+	background-color: #f6f5fa;
 	padding: 100px;
 }
 /* #clouds {
@@ -373,6 +370,21 @@ div .header {
 }
 #header-top {
 	font-size: 50px;
+}
+#navbar-brand {
+	margin-top: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    height: auto;
+}
+
+navbar-scroll {
+	margin-top: 0px;
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 0px;
+    height: auto;
 }
 
 @media (max-width: 1000px) {  

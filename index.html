@@ -38,10 +38,13 @@
 
 <body id="page-top" class="landing-page">
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md navbar-scroll" role="navigation">
             <div class="container">
                 <!-- ZOBACZYĆ -->
-                <a class="navbar-brand" href="index.html">&nbsp;</a>
+                <a class="navbar-brand container-fluid w-25" href="index.html" id="navbar-brand">
+
+                    <img src="./img/zawierzpr-logo.png" alt="">
+                </a>
 
                 <div class="navbar-header page-scroll">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
@@ -71,7 +74,7 @@
         <div class="carousel-item active">
             <div class="container">
                 <div class="carousel-caption">
-                    <img src="./img/zawierzpr-logo.png" alt="">
+                    <!-- <img src="./img/zawierzpr-logo.png" alt=""> -->
                 </div>
 
             </div>
@@ -79,23 +82,23 @@
             <div class="header-back one"></div>
 
         </div>
-       
+
         <div class="container px-4">
             <div class="row justify-content-md-center ">
 
                 <div class="col-lg">
-                    <p id="header-top"  class="header display-4  font-weight-bold">
+                    <p id="header-top" class="header display-4  font-weight-bold">
                         Zmierz PR. <br> <span>Nowy standard</span> mierzenia<br> efektywności PR w Polsce.
                     </p>
                     <p class="header h4 font-weight-normal" style="line-height: 1.6;">
                         Przedstawiamy kalkulator do obliczania zasięgu Twoich kampanii. Zapraszamy do użytkowania!
                     </p>
-                    <p  class="header h6 font-weight-normal">
+                    <p class="header h6 font-weight-normal">
                         Jeśli masz pomysł jak go ulepszyć: napisz do nas.<br>
                         Z góry dziękujemy za sugestie :)
                     </p>
-                        
-                   
+
+
                 </div>
 
                 <div class="col-lg">
@@ -138,6 +141,9 @@
 
             <div id="calculator" class="container">
                 <div>
+                    <h1 style="color:#58d1e3">Użyj kalkulatora</h1>
+                    <h2 style="color:#58d1e3; font-weight: 400;">dla danych z prasy, radia, telewizji i portali
+                        internetowych</h2>
                     <h2 class="text-white font-weight-bold">W miejscu “Mój zasięg” wpisz uzyskany z serwisów monitoringu
                         mediów <span>zasięg</span> w
                         celu przeliczenia go na statystycznego odbiorcę w kraju wg struktury wieku Twojej grupy
@@ -147,29 +153,7 @@
                         <span>sumaryczną liczbę</span> zasięgu projektu lub kampanii, która u Twojego dostawcy
                         odpowiada za <span>potencjalne kontakty z pojedyńczymi materiałami</span>.
                     </h3>
-                    <h3 class="text-white font-weight-normal">
-                        Specyfika <span>social media</span>, gdzie odbiorcy mogą i wręcz powinni reagować na komunikaty,
-                        sprawia, że
-                        w tym przypadku w zależności od celu kampanii warto zastosować nieco inny model pomiaru, który
-                        uwzględnia przynajmniej 1 z 3 wymiarów: <span>zasięg</span>, <span>zaangażowanie</span> lub
-                        <span>akcje</span>.
-                    </h3>
-                    <p class="text-white font-weight-normal">
-                        <span><b>Zasięg</b>
-                        </span> — liczba kontaktów z materiałem, najlepiej oprzeć to na liczbie wyświetleń
-                        (impressions/views)
-                    </p>
-                    <p class="text-white font-weight-normal">
-                        <span><b>Zaangażowanie</b>
-                        </span> — reakcja na komunikację, którą najlepiej mierzyć między kanałami sumując akcje
-                        (polubienia, retweety itd.); warto odwołać się do liczby wzmianek, ale nie powinien to być
-                        jedyny KPI kampanii w social media
-                    </p>
-                    <p class="text-white font-weight-normal">
-                        <span><b>Akcje</b></span> — konkretne działania będące efektem komunikatów, na przykład
-                        kliknięcia poszczególnych
-                        materiałów, pobrania, obejrzenia oraz deklaracje uczestnictwa w wydarzeniach.
-                    </p>
+
                     <p class="text-white font-weight-normal">
                         * Dane dotyczące struktury ludności Polski pochodzą z Głównego Urzędu Statystycznego.
                     </p>
@@ -195,7 +179,8 @@
 
 
                             <label for="1524_age" class="btn btn-secondary btn-lg active" style="border-radius: 12px">
-                                <input type="checkbox" id="1524_age" name="age-radios" checked autocomplete="off" />15-24
+                                <input type="checkbox" id="1524_age" name="age-radios" checked
+                                    autocomplete="off" />15-24
                             </label>
 
 
@@ -264,6 +249,37 @@
         </div>
     </section>
 
+    <section id="how">
+        <div class="container">
+            <h1 id="author-header" class="m-1">Jak mierzyć zasięg w social mediach?</h1>
+            <br>
+            <br>
+            <h3 class=" font-weight-normal">
+                Specyfika <span>social media</span>, gdzie odbiorcy mogą i wręcz powinni reagować na komunikaty,
+                sprawia, że
+                w tym przypadku w zależności od celu kampanii warto zastosować nieco inny model pomiaru, który
+                uwzględnia przynajmniej 1 z 3 wymiarów: <span>zasięg</span>, <span>zaangażowanie</span> lub
+                <span>akcje</span>.
+            </h3>
+            <p class=" font-weight-normal">
+                <span><b>Zasięg</b>
+                </span> — liczba kontaktów z materiałem, najlepiej oprzeć to na liczbie wyświetleń
+                (impressions/views)
+            </p>
+            <p class=" font-weight-normal">
+                <span><b>Zaangażowanie</b>
+                </span> — reakcja na komunikację, którą najlepiej mierzyć między kanałami sumując akcje
+                (polubienia, retweety itd.); warto odwołać się do liczby wzmianek, ale nie powinien to być
+                jedyny KPI kampanii w social media
+            </p>
+            <p class=" font-weight-normal">
+                <span><b>Akcje</b></span> — konkretne działania będące efektem komunikatów, na przykład
+                kliknięcia poszczególnych
+                materiałów, pobrania, obejrzenia oraz deklaracje uczestnictwa w wydarzeniach.
+            </p>
+        </div>
+
+    </section>
 
 
     <!-- AUTORZY -->
@@ -272,7 +288,7 @@
         <div class="container">
             <div class="row m-b-lg">
                 <div class="col-lg-12 text-justify">
-                    <h1 id="author-header" class="min-center">AUTORZY</h1>
+                    <h1 class="min-center">AUTORZY</h1>
 
                 </div>
             </div>
@@ -280,7 +296,14 @@
             <div class="container">
                 <div class="row m-b-lg">
                     <div class="col-lg-12 text-justify">
-                        <p>&nbsp;</p>
+                        <p>
+                            Projekt standaryzacji mierzenia efektywności kampanii PR-owych na podstawie wskaźnika
+                            zasięgu to
+                            wspólna inicjatywa Klubu Dyrektorów i Dyrektorek PR, Związku Firm Public Relations oraz firm
+                            zajmujących
+                            się monitoringiem mediów (Instytut Monitorowania Mediów) i analizami social media
+                            (Sotrender).
+                        </p>
 
                     </div>
                 </div>
@@ -292,7 +315,7 @@
                 <div class="col-xl-3 wow fadeInLeft">
                     <div class="text-center">
                         <a href="https://zfpr.pl/kdpr/" target="_blank"><img src="img/logo_black.png" alt=""
-                                class="img-fluid"></a>
+                                style="height: 70px"></a>
 
                         <!-- <ul class="list-inline social-icon">
                         <li class="list-inline-item"><a href="https://twitter.com/ZFPRpl" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -324,7 +347,7 @@
                 <div class="col-xl-3 wow fadeInRight">
                     <div class="text-center">
                         <a href="https://www.imm.com.pl/" target="_blank"><img src="img/logo_imm_black_imm_omww.png"
-                                class="img-fluid" alt=""></a>
+                                class="img-fluid" alt="" style="padding-top: 10px;"></a>
 
                         <!-- <ul class="list-inline social-icon">
                         <li class="list-inline-item"><a href="https://twitter.com/IMMonitoring" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -346,7 +369,7 @@
                         <li class="list-inline-item"><a href="https://twitter.com/sotrender" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.facebook.com/Sotrender" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com/company/sotrender/" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
-                        </ul>
+
                     </div>
 
                 </div>
@@ -371,7 +394,7 @@
                         swoimi spostrzeżeniami odnośnie do metodologii - napisz do nas!</div>
                     <div class="text-center">
                         <a id="button-down" href="mailto:dkm@imm.com.pl,info@zfpr.pl"
-                            class="btn btn-primary footer_button w-50" style="">Napisz do nas</a>
+                            class="btn btn-primary footer_button w-50" style="">Wyślij e-mail</a>
                     </div>
                 </div>
                 <!-- <div class="col text-center">

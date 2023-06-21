@@ -212,6 +212,7 @@
 
 			let text = document.getElementById('msg').innerHTML.slice(0,document.getElementById('msg').innerHTML.search('Wyczyść')) ;
 			text = text.replace(/(<([^>]+)>)/gi, "");
+			text = `${text.slice(0,text.search('średnio'))} ${text.slice(text.search('średnio'),text.length)}`
 			console.log("hej")
 			console.log(text);
 			navigator.clipboard.writeText(text);

@@ -8012,7 +8012,7 @@ body.landing-page {
   height: auto;
 }
 .landing-page .header-back {
-  height: 300px;
+  height: 150px;
   width: 100%;
 }
 .landing-page .header-back.one {
@@ -9472,6 +9472,13 @@ body.md-skin {
   height: 100%;
   position: fixed;
   display: none;
+}
+#how{
+  background-image: url('../img/1170_zmierzpr_landingpage-bg01.svg');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 100px;
 }
 @media (min-width: 768px) {
   #page-wrapper {
