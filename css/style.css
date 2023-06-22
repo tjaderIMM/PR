@@ -9480,6 +9480,24 @@ body.md-skin {
 	background-size: contain;
 	padding: 100px;
 }
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+@media (max-width: 1200px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+}
+
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;

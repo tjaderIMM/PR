@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
+
 #calculator {
 	display: flex;
 	flex-direction: column;
@@ -40,7 +41,7 @@
 
 #calculator-btn:hover {
 	color: #fff;
-	
+
 }
 
 #calculator-msg {
@@ -159,41 +160,43 @@
 	font-size: 27px;
 	color: #58d1e3;
 	font-weight: 700;
-	
+
 }
+
 .pricing {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column
-  }
+}
+
 div .footer__header {
 	color: white;
 	font-size: 57px;
 	color: #ffffff;
 	font-weight: 700;
-	
-  }
 
-  div .footer__p {
-	margin-top: 70px;
+}
+
+div .footer__p {
+	
 	font-size: 32px;
 	line-height: 47px;
 	color: #141780;
 	font-weight: 300;
-	margin-bottom: 80px;
-	font-family: "Montserrat";
 	
-  }
+	font-family: "Montserrat";
 
- #btn .btn-primary,
- #btn .btn-primary:hover,
- #btn .btn-primary:active,
- #btn .btn-primary:visited,
- #btn .btn-primary:focus {
-  background-color: #141780;
-  border-color: #141780;
-  font-family: "Montserrat";
+}
+
+#btn .btn-primary,
+#btn .btn-primary:hover,
+#btn .btn-primary:active,
+#btn .btn-primary:visited,
+#btn .btn-primary:focus {
+	background-color: #141780;
+	border-color: #141780;
+	font-family: "Montserrat";
 }
 
 body {
@@ -204,6 +207,7 @@ body {
 	background-color: #f6f5fa;
 	padding: 100px;
 }
+
 /* #clouds {
 	background: url('../img/1170_zmierzpr_landingpage-bg02.png') no-repeat;
 	position: relative;
@@ -218,17 +222,19 @@ body {
 div span {
 	color: #58d1e3;
 }
+
 div .header {
 	color: #141780;
 }
+
 #navbar .header {
 	color: #141780;
 }
 
 #team .header {
 	color: #141780;
-	
-	
+
+
 }
 
 #author-header {
@@ -239,64 +245,74 @@ div .header {
 	color: #fff;
 }
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	opacity: 0.600;
-  
-  color: #141780;
-  font-weight: 300;
-  font-style: italic;
-  font-family: "Montserrat";
- /* Firefox */
+
+	color: #141780;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Montserrat";
+	/* Firefox */
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
 	opacity: 0.600;
-  
-  color: #141780;
-  font-weight: 300;
-  font-style: italic;
-  font-family: "Montserrat";
+
+	color: #141780;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Montserrat";
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
+.form-control::-ms-input-placeholder {
+	/* Microsoft Edge */
 	opacity: 0.600;
-  
-  color: #141780;
-  font-weight: 300;
-  font-style: italic;
-  font-family: "Montserrat";
+
+	color: #141780;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Montserrat";
 }
 
 .text-info1 {
 	color: #58d1e3;
 }
+
 #button-down {
-	border-radius: 16px; font-size: 35px; padding: 10px 20px;
+	border-radius: 16px;
+	font-size: 35px;
+	padding: 10px 20px;
 }
+
 #text-bottom {
-	font-size: 40px;
+	font-size: 16px;
+	font-weight: 400;
 }
+
 #b {
 	font-size: 30px;
 }
+
 .wrapper {
 	text-transform: uppercase;
 	color: #555;
 	cursor: help;
 
-	
-	
+
+
 	position: relative;
 	text-align: center;
-	
-  }
-  
-  .wrapper .tooltip {
-	
+
+}
+
+.wrapper .tooltip {
+
 	bottom: 100%;
 	background-color: #fff;
 	display: block;
-	
+
 	margin-bottom: 15px;
 	opacity: 0;
 	padding: 20px;
@@ -307,18 +323,18 @@ div .header {
 	align-items: center;
 	justify-content: center;
 	transform: translateY(10px);
-	
+
 	transition: all .25s ease-out;
 	font-size: 15px;
-	
+
 	color: #141780;
-	
+
 	font-family: "Montserrat";
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  }
-  
-  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
-  .wrapper .tooltip:before {
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper .tooltip:before {
 	bottom: -20px;
 	content: " ";
 	display: block;
@@ -326,68 +342,72 @@ div .header {
 	left: 0;
 	position: absolute;
 	width: 100%;
-	
-  }
-  
-  /* CSS Triangles - see Trevor's post */
-  .wrapper .tooltip:after {
+
+}
+
+/* CSS Triangles - see Trevor's post */
+.wrapper .tooltip:after {
 	border-radius: 15px;
 	bottom: -10px;
 	content: " ";
 	height: 0;
 	left: 50%;
-	
+
 	position: absolute;
-	
+
 	width: 0;
-  }
-  .tooltip {
-  
-  width: 100px;
-  }
-  
-  .wrapper:hover .tooltip {
+}
+
+.tooltip {
+
+	width: 100px;
+}
+
+.wrapper:hover .tooltip {
 	opacity: 1;
 	pointer-events: auto;
 	border-radius: 12px;
 	transform: translateY(0px);
-  }
-  
-  /* IE can just show/hide with no transition */
-  .lte8 .wrapper .tooltip {
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .tooltip {
 	display: none;
-  }
-  
-  .lte8 .wrapper:hover .tooltip {
+}
+
+.lte8 .wrapper:hover .tooltip {
 	display: block;
-	
-  }
+
+}
+
 #calculator-btn {
 	font-size: 35px;
 	padding: 10px 20px;
 	border-radius: 16px;
 	font-weight: 700;
 }
+
 #header-top {
 	font-size: 50px;
 }
+
 #navbar-brand {
 	margin-top: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 10px;
-    height: auto;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 10px;
+	height: auto;
 }
 
 navbar-scroll {
 	margin-top: 0px;
-    border-radius: 0px;
-    font-size: 12px;
-    padding: 0px;
-    height: auto;
+	border-radius: 0px;
+	font-size: 12px;
+	padding: 0px;
+	height: auto;
 }
 
-@media (max-width: 1000px) {  
+@media (max-width: 1000px) {
 	.pricing1 {
 		display: flex;
 		align-items: center;
@@ -395,61 +415,71 @@ navbar-scroll {
 		flex-direction: column;
 		gap: 30px;
 	}
+
 	.min-center {
 		text-align: center;
 	}
+
 	#header-top {
 		font-size: 35px;
 	}
+
 	#button-down {
-		border-radius: 16px; 
-		font-size: 10px; 
-		
+		border-radius: 16px;
+		font-size: 10px;
+
 	}
+
 	#text-bottom {
 		font-size: 25px;
 	}
+
 	#calculator-msg {
 		width: 600px;
 		max-width: 100%;
 		margin-top: 25px;
-	
+
 	}
-	
+
 	#calculator-msg #msg {
 		text-align: left;
 		color: #5000b5;
 	}
-	
+
 	#calculator-msg #result {
 		font-size: 30px;
 		font-weight: bold;
-	
+
 		text-align: center;
 	}
-	
+
 	#calculator-msg.error #msg {
 		color: red;
 	}
+
 	#b {
 		font-size: 25px;
 	}
-	
+
 }
-@media (max-width: 770px) {  
+
+@media (max-width: 770px) {
 	#msg {
 		font-size: 12px;
-		
+
 	}
 }
-@media (max-width: 460px) {  
+
+@media (max-width: 460px) {
 	#msg {
 		font-size: 9px;
 	}
+
 	#b {
 		font-size: 20px;
 	}
 }
+
 /* @media (max-width: 360px) {  
 	#msg {
 		font-size: 7px;
