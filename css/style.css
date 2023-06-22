@@ -9484,8 +9484,18 @@ body.md-skin {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-left: -15px;
 }
-
+@media (max-width: 1300px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+}
 
 @media (max-width: 1200px) {
   .images {
