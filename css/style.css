@@ -9482,9 +9482,9 @@ body.md-skin {
 }
 .images {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
-  margin-left: -15px;
+  
 }
 @media (max-width: 1300px) {
   .images {
@@ -9492,7 +9492,7 @@ body.md-skin {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
   }
   
 }
@@ -9503,7 +9503,7 @@ body.md-skin {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
   }
   
 }
