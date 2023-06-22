@@ -151,6 +151,43 @@
 			return ' od 55 roku życia ';
 		};
 	};
+	function getAgeText2() {
+		if(allAgeInput.prop('checked')){
+			return ' od 15 roku życia ';
+		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 15 roku życia ';
+		}else if(fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 15 do 24 lat ';
+		}else if(fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 15 do 39 lat ';
+		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 15 do 54 lat ';
+		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 15 do 54 lat ';
+		}else if(fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 15 do 24 lat lub od 55 roku życia';
+		}else if(fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 15 do 24 lat lub  od 40 roku życia';
+		}else if(!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 25 roku życia ';
+		}else if(!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 25 do 39 lat lub od 55 roku życia ';
+		}else if(!fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 55 roku życia ';
+		}else if(!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 40 roku życia ';
+		}else if(!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 25 do 54 lat ';
+		}else if(!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 25 do 39 lat ';
+		}else if(!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 40 do 54 lat ';
+		}else if(fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+			return ' od 15 do 39 lat lub od 55 roku życia ';
+		}else if(fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+			return ' od 15 do 24 lat lub od 40 do 54 lat ';
+		}
+	};
 
 	$('#calculator-btn').click(function () {
 		var messageCtn = $('#calculator-msg #msg');
@@ -201,11 +238,11 @@
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
 
 			if (Math.round(result) < 1) {
-				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + parseInt(Math.round(count / val)) + ' raz[y]</b> ' + bootonMenu;
+				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + parseInt(Math.round(count / val)) + ' raz[y]</b> ' + bootonMenu;
 			} else {
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Math.round(result) + ' raz[y]</b>' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Math.round(result) + ' raz[y]</b>' + bootonMenu;
 			};
-
+			
 			messageCtn.hide().html(text).fadeIn('slow');
 		};
 		document.querySelector('#copy').onclick = function () {
