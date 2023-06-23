@@ -420,6 +420,8 @@ navbar-scroll {
 
 }
 
+
+
 @media (max-width: 1000px) {
 	.pricing1 {
 		display: flex;
@@ -478,6 +480,9 @@ navbar-scroll {
 		display: none;
 	}
 
+	.centrum {
+		text-align: center;
+	}
 }
 
 @media (max-width: 770px) {
