@@ -9486,6 +9486,7 @@ body.md-skin {
   gap: 30px;
   
 }
+
 @media (max-width: 1300px) {
   .images {
     display: flex;
