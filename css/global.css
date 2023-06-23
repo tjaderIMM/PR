@@ -284,6 +284,7 @@ div .header {
 	border-radius: 16px;
 	font-size: 28px;
 	padding: 8px 18px;
+	width: 30%;
 }
 
 #text-bottom {
@@ -416,7 +417,7 @@ navbar-scroll {
 }
 #button-down {
 	border-radius: 16px;
-	font-size: 10px;
+	font-size: 16px;
 
 }
 
