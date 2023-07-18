@@ -421,6 +421,9 @@ navbar-scroll {
 
 }
 
+nav {
+	background-color: #FFFFFF;
+}
 
 
 @media (max-width: 1000px) {
