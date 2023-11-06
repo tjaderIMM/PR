@@ -152,39 +152,39 @@
 		};
 	};
 	function getAgeText2() {
-		if(allAgeInput.prop('checked')){
+		if (allAgeInput.prop('checked')) {
 			return ' od 15 roku życia ';
-		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+		} else if (fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 15 roku życia ';
-		}else if(fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 15 do 24 lat ';
-		}else if(fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 15 do 39 lat ';
-		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 15 do 54 lat ';
-		}else if(fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 15 do 54 lat ';
-		}else if(fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+		} else if (fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 15 do 24 lat lub od 55 roku życia';
-		}else if(fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+		} else if (fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 15 do 24 lat lub  od 40 roku życia';
-		}else if(!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 25 roku życia ';
-		}else if(!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 25 do 39 lat lub od 55 roku życia ';
-		}else if(!fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && !sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 55 roku życia ';
-		}else if(!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 40 roku życia ';
-		}else if(!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 25 do 54 lat ';
-		}else if(!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 25 do 39 lat ';
-		}else if(!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (!fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 40 do 54 lat ';
-		}else if(fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')){
+		} else if (fInput.prop('checked') && sInput.prop('checked') && !tInput.prop('checked') && lInput.prop('checked')) {
 			return ' od 15 do 39 lat lub od 55 roku życia ';
-		}else if(fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')){
+		} else if (fInput.prop('checked') && !sInput.prop('checked') && tInput.prop('checked') && !lInput.prop('checked')) {
 			return ' od 15 do 24 lat lub od 40 do 54 lat ';
 		}
 	};
@@ -241,29 +241,45 @@
 
 			if (Math.round(result) < 1) {
 				//result = result.toFixed(10);
-				const  tmp =`${result.toPrecision(3)}`;
-				if( tmp.search("e")){
+				const tmp = `${result.toPrecision(3)}`;
+				if (tmp.search("e")) {
 					result = result.toFixed(8);
-				}else{
+				} else {
 					result = result.toPrecision(3);
 				}
+				let osoba = '';
+				if (person_i18n == "osoba") {
+					osoba = "Polak";
+				} else if (person_i18n == "mężczyzna") {
+					osoba = "Polak";
+				} else if (person_i18n == "kobieta") {
+					osoba = "Polka";
+				}
 
-				text = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' +  result + ' raz[y]</b> ' + bootonMenu;
+				text
+					// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
+					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
+					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
+					// 	' raz[y]</b> ' + bootonMenu;
+					= '<b id="b">Średnio co ' + "<br>" + result + 'raz[y]</b>' + "<br>" + "statystyczny " + osoba + " w wieku w wieku " + getAgeText2() +'<br>' + "mógł mieć kontakt z informacją o kampanii " + bootonMenu;
+				console.log("Test1");
 			} else {
 				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + result.toFixed(2) + ' raz[y]</b>' + bootonMenu;
+				console.log("Test");
 			};
-			
+
 			messageCtn.hide().html(text).fadeIn('slow');
 		};
+		//Średnio co X statystyczny Polak/Polka w wieku w wieku powyżej 15 lat mógł mieć kontakt z informacją o kampanii
 		document.querySelector('#copy').onclick = function () {
 
-			let text = document.getElementById('msg').innerHTML.slice(0,document.getElementById('msg').innerHTML.search('Wyczyść')) ;
+			let text = document.getElementById('msg').innerHTML.slice(0, document.getElementById('msg').innerHTML.search('Wyczyść'));
 			text = text.replace(/(<([^>]+)>)/gi, "");
-			text = `${text.slice(0,text.search('średnio'))} ${text.slice(text.search('średnio'),text.length)}`
+			text = `${text.slice(0, text.search('średnio'))} ${text.slice(text.search('średnio'), text.length)}`
 			console.log("hej")
 			console.log(text);
 			navigator.clipboard.writeText(text);
-					
+
 		}
 
 		document.querySelector('#remove').onclick = function () {
@@ -274,7 +290,7 @@
 
 
 	});
-	
+
 	$('#calculator-input').on('paste', function () {
 		var element = this;
 		setTimeout(function () {
@@ -286,18 +302,18 @@
 	$('#all-age').on('change', function () {
 
 
-		
+
 		fInput.prop('checked', false);
 		sInput.prop('checked', false);
-		tInput.prop('checked', false); 
+		tInput.prop('checked', false);
 		lInput.prop('checked', false);
 		document.getElementById('1524_age').parentElement.classList.remove('active');
 		document.getElementById('2539_age').parentElement.classList.remove('active');
 		document.getElementById('4054_age').parentElement.classList.remove('active');
 		document.getElementById('55_age').parentElement.classList.remove('active');
 
-		
-		
+
+
 	});
 	$('#1524_age').on('change', function () {
 
@@ -305,32 +321,32 @@
 		allAgeInput.prop('checked', false);
 		document.getElementById('all-age').parentElement.classList.remove('active');
 
-		
-		
+
+
 	});
 	$('#2539_age').on('change', function () {
 
 
-		
+
 
 		allAgeInput.prop('checked', false);
 		document.getElementById('all-age').parentElement.classList.remove('active');
-		
+
 	});
 	$('#4054_age').on('change', function () {
 
 
-		
+
 
 		allAgeInput.prop('checked', false);
 		document.getElementById('all-age').parentElement.classList.remove('active');
-		
+
 	});
 	$('#55_age').on('change', function () {
 
 
 		allAgeInput.prop('checked', false);
 		document.getElementById('all-age').parentElement.classList.remove('active');
-		
+
 	});
 }());
