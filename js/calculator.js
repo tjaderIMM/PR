@@ -241,11 +241,13 @@
 
 			if (Math.round(result) < 1) {
 				//result = result.toFixed(10);
+				var result = (count/val);
+				console.l
 				const tmp = `${result.toPrecision(3)}`;
 				if (tmp.search("e")) {
-					result = result.toFixed(8);
+					result = result.toFixed(2);
 				} else {
-					result = result.toPrecision(3);
+					result = result.toPrecision(2);
 				}
 				let osoba = '';
 				if (person_i18n == "osoba") {
