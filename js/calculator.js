@@ -247,15 +247,16 @@
 				if (tmp.search("e")) {
 					result = result.toFixed(2);
 				} else {
-					result = result.toPrecision(2);
+					result = result.toPrecision();
 				}
+				let contact = '';
 				let osoba = '';
-				if (person_i18n == "osoba") {
+				if (person_i18n == "osoba" || person_i18n == "mężczyzna") {
 					osoba = "Polak";
-				} else if (person_i18n == "mężczyzna") {
-					osoba = "Polak";
+					contact = ' mógł ';
 				} else if (person_i18n == "kobieta") {
 					osoba = "Polka";
+					contact = ' mogła ';
 				}
 				
 				text
@@ -263,11 +264,9 @@
 					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
 					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
 					// 	' raz[y]</b> ' + bootonMenu;
-					= '<b id="b">Średnio co ' + "<br>" + result + 'raz[y]</b>' + "<br>" + "statystyczny " + osoba + " w wieku w wieku " + getAgeText2() +'<br>' + "mógł mieć kontakt z informacją o kampanii " + bootonMenu;
-				console.log("Test1");
+					= '<b id="b">Średnio co ' + "<br>" + result + 'raz[y]</b>' + "<br>" + "statystyczny " + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
 			} else {
 				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + result.toFixed(2) + ' raz[y]</b>' + bootonMenu;
-				console.log("Test");
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');
@@ -278,8 +277,6 @@
 			let text = document.getElementById('msg').innerHTML.slice(0, document.getElementById('msg').innerHTML.search('Wyczyść'));
 			text = text.replace(/(<([^>]+)>)/gi, "");
 			text = `${text.slice(0, text.search('średnio'))} ${text.slice(text.search('średnio'), text.length)}`
-			console.log("hej")
-			console.log(text);
 			navigator.clipboard.writeText(text);
 
 		}
