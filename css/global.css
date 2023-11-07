@@ -48,7 +48,7 @@
 	width: 600px;
 	max-width: 100%;
 	margin-top: 25px;
-
+	margin-bottom: 40px;
 }
 
 #calculator-msg #msg {
@@ -457,6 +457,7 @@ navbar-scroll {
 		width: 600px;
 		max-width: 100%;
 		margin-top: 25px;
+		margin-bottom: 40px;
 
 	}
 

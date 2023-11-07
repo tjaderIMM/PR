@@ -255,7 +255,7 @@
 				} else if (person_i18n == "kobieta") {
 					osoba = "Polka";
 				}
-
+				
 				text
 					// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
 					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
