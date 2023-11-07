@@ -264,7 +264,7 @@
 					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
 					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
 					// 	' raz[y]</b> ' + bootonMenu;
-					= '<b id="b">Średnio co ' + "<br>" + result + 'raz[y]</b>' + "<br>" + "statystyczny " + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
+					= '<b id="b">Średnio co ' + "<br>" + Math.round(result) + 'raz[y]</b>' + "<br>" + "statystyczny " + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
 			} else {
 				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + result.toFixed(2) + ' raz[y]</b>' + bootonMenu;
 			};
