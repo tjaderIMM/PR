@@ -1478,7 +1478,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   padding: 6px 12px;
   font-size: 14px;
   margin: 8px;
-  display: none;
+  /* display: none; */
 }
 .top-navigation .navbar-nav .open .dropdown-menu > li > a,
 .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header {
@@ -7907,7 +7907,7 @@ body.landing-page {
   padding-right: 15px;
   padding-left: 15px;
 }
-.landing-page .navbar-default.navbar-scroll {
+.landing-page .navbar-default.navbar-scrolllllllllll {
   background-color: #fff;
   border-color: #fff;
   padding: 15px 0;
@@ -7927,13 +7927,13 @@ body.landing-page {
 }
 .landing-page .navbar-nav > li > a {
   padding-top: 25px;
-  border-top: 6px solid transparent;
+  /* border-top: 6px solid transparent; */
 }
 .landing-page .navbar-default .navbar-nav > .active > a,
 .landing-page .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
   color: #676c6a;
-  border-top: 6px solid #000000;
+  /* border-top: 6px solid #000000; */
 }
 .landing-page .navbar-default .navbar-nav > li > a:hover,
 .landing-page .navbar-default .navbar-nav > li > a:focus {
@@ -7948,7 +7948,7 @@ body.landing-page {
   background: transparent;
   color: #676c6a;
 }
-.landing-page .navbar-default.navbar-scroll .navbar-nav > .active > a:focus {
+.landing-page .navbar-default.navbar-scrolll .navbar-nav > .active > a:focus {
   background: transparent;
   color: inherit;
 }
@@ -7969,13 +7969,13 @@ body.landing-page {
   transition: all 0.3s ease-in-out 0s;
   margin-top: -16px;
 }
-.landing-page .navbar-scroll.navbar-default .nav li a {
+.landing-page .navbar-scrolll.navbar-default .nav li a {
   color: #000000;
 }
-.landing-page .navbar-scroll.navbar-default .nav li a:hover {
+.landing-page .navbar-scrolll.navbar-default .nav li a:hover {
   color: #000000;
 }
-.landing-page .navbar-wrapper .navbar.navbar-scroll {
+.landing-page .navbar-wrapper .navbar.navbar-scrolll {
   padding-top: 0;
   padding-bottom: 5px;
   border-bottom: 1px solid #e7eaec;
@@ -7991,7 +7991,7 @@ body.landing-page {
 .landing-page .nav > li > a {
   padding: 25px 10px 15px 10px;
 }
-.landing-page .navbar-scroll .navbar-nav > li > a {
+.landing-page .navbar-scrolll .navbar-nav > li > a {
   padding: 20px 10px;
 }
 .landing-page .navbar-default .navbar-nav > li .nav-link.active,
@@ -8001,10 +8001,10 @@ body.landing-page {
 .landing-page .navbar-fixed-top {
   border: none !important;
 }
-.landing-page .navbar-fixed-top.navbar-scroll {
+.landing-page .navbar-fixed-top.navbar-scrolll {
   border-bottom: 1px solid #e7eaec !important;
 }
-.landing-page .navbar.navbar-scroll .navbar-brand {
+.landing-page .navbar.navbar-scrolll .navbar-brand {
   margin-top: 5px;
   border-radius: 5px;
   font-size: 12px;
@@ -8367,7 +8367,7 @@ body.landing-page {
     font-size: 28px;
 	
   }
-  .landing-page .navbar.navbar-scroll .navbar-brand {
+  .landing-page .navbar.navbar-scrolll .navbar-brand {
     margin-top: 6px;
   }
   .landing-page .navbar-default {
@@ -8407,14 +8407,14 @@ body.landing-page {
   .landing-page .navbar-wrapper .navbar {
     padding-left: 15px;
     padding-right: 5px;
-    display: none;
+    /* display: none; */
   }
   .landing-page .navbar-default .navbar-nav > .active > a,
   .landing-page .navbar-default .navbar-nav > .active > a:hover {
     color: inherit;
   }
   .landing-page .carousel-control {
-    display: none;
+    /* display: none; */
   }
 }
 @media (min-width: 992px) {
@@ -9225,7 +9225,7 @@ body.md-skin {
 .md-skin .landing-page {
   font-family: "Montserrat", sans-serif;
 }
-.md-skin .landing-page.navbar-default.navbar-scroll {
+.md-skin .landing-page.navbar-default.navbar-scrolll {
   background-color: #fff !important;
 }
 .md-skin .landing-page.navbar-default {
@@ -9393,14 +9393,14 @@ body.md-skin {
   transition: all 0.3s ease-in-out 0s;
   box-shadow: none;
 }
-.md-skin.landing-page .navbar-default.navbar-scroll,
+.md-skin.landing-page .navbar-default.navbar-scrolll,
 .md-skin.landing-page.body-small .navbar-default {
   background-color: #ffffff !important;
 }
 .md-skin.landing-page .nav > li.active {
   background: inherit;
 }
-.md-skin.landing-page .navbar-scroll .navbar-nav > li > a {
+.md-skin.landing-page .navbar-scrolll .navbar-nav > li > a {
   padding: 20px 10px;
 }
 .md-skin.landing-page .navbar-default .nav li a {
