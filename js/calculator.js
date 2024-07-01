@@ -289,9 +289,8 @@
 				// }
 				if(result>0.5&&result<0.75){
 					result=2;
-				}else{
-					result=1;
 				}
+				
 				
 				// text
 				// 	// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
