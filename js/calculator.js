@@ -267,7 +267,38 @@
 					// 	' raz[y]</b> ' + bootonMenu;
 					= '<b id="b">Średnio co ' + "<br>" + Number.parseFloat(result).toFixed(2) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
 			} else {
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
+
+				var result = (count/val);
+				
+				// const tmp = `${result.toPrecision(3)}`;
+				// if (tmp.search("e")) {
+				// 	result = result.toFixed(2);
+				// } else {
+				// 	result = result.toPrecision();
+				// }
+				let contact = '';
+				let osoba = '';
+				if (person_i18n == "osoba" || person_i18n == "mężczyzna") {
+					osoba = "Polak";
+					contact = ' mógł ';
+				} else if (person_i18n == "kobieta") {
+					osoba = "Polka";
+					contact = ' mogła ';
+					stat = "statystyczna "
+				}
+				if(result>0.5&&result<0.75){
+					result=2;
+				}else{
+					result=1;
+				}
+				
+				text
+					// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
+					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
+					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
+					// 	' raz[y]</b> ' + bootonMenu;
+					= '<b id="b">Średnio co ' + "<br>" + Number.parseFloat(result).toFixed(2) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
+				//text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');

@@ -51,7 +51,7 @@
                     
                     </button>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <div class="collapse navbar-collapse justify-content-end " style="display: none;" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="nav-link page-scroll" href="#page-top" style="color:#141780;">Home</a></li>
 
@@ -443,6 +443,13 @@
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/inspinia.js"></script>
+    <script>
+        let button = document.querySelector('.navbar-toggler ');
+        let navbar = document.querySelector('#navbar');
+        button.onclick =()=>{
+            navbar.style.display = "block"
+        }
+    </script>
 </body>
 
 </html>
