@@ -265,9 +265,9 @@
 					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
 					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
 					// 	' raz[y]</b> ' + bootonMenu;
-					= '<b id="b">Średnio co ' + "<br>" + Math.round(result) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
+					= '<b id="b">Średnio co ' + "<br>" + Number.parseFloat(result).toFixed(2) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
 			} else {
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Math.round(result)+ ' raz[y]</b>' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');
