@@ -230,7 +230,7 @@
 			$('#calculator-msg').removeClass('error');
 
 			var count = getNumberOfPeople();
-
+			console.log(count);
 			var result = (val / count);
 			//messageResult.hide().text("Wynik: " + result.toFixed(2)).fadeIn('slow');
 			console.log(result);
@@ -242,7 +242,7 @@
 			if (Math.round(result) < 1) {
 				//result = result.toFixed(10);
 				var result = (count/val);
-				console.l
+				
 				const tmp = `${result.toPrecision(3)}`;
 				if (tmp.search("e")) {
 					result = result.toFixed(2);
@@ -269,7 +269,7 @@
 					= '<b id="b">Średnio co ' + "<br>" +Math.round(result)  + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
 			} else {
 
-				var result = (count/val);
+				//var result = (count/val);
 				
 				// const tmp = `${result.toPrecision(3)}`;
 				// if (tmp.search("e")) {
@@ -287,9 +287,9 @@
 				// 	contact = ' mogła ';
 				// 	stat = "statystyczna "
 				// }
-				if(result>0.5&&result<0.75){
-					result=2;
-				}
+				// if(result>0.5&&result<0.75){
+				// 	result=2;
+				// }
 				
 				
 				// text
@@ -298,7 +298,7 @@
 				// 	// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
 				// 	// 	' raz[y]</b> ' + bootonMenu;
 				// 	= '<b id="b">Średnio co ' + "<br>" + Number.parseFloat(result).toFixed(2) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Math.round(result)+ ' raz[y]</b>' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');
