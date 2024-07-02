@@ -251,13 +251,16 @@
 				}
 				let contact = '';
 				let osoba = '';
-				if (person_i18n == "osoba" || person_i18n == "mężczyzna") {
+				if (person_i18n == "mężczyzna") {
 					osoba = "Polak";
 					contact = ' mógł ';
 				} else if (person_i18n == "kobieta") {
 					osoba = "Polka";
 					contact = ' mogła ';
 					stat = "statystyczna "
+				}else if(person_i18n == "osoba"){
+					osoba = "osoba";
+					stat = "statystyczna ";
 				}
 				
 				text
