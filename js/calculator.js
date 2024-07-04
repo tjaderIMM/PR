@@ -264,6 +264,15 @@
 					contact = ' mogła ';
 				}
 				
+				if(Math.round(result)==1){
+					text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
+				}else{
+
+				
+
+
+
+
 				text
 					// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
 					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
@@ -271,7 +280,8 @@
 					// 	' raz[y]</b> ' + bootonMenu;
 					//Number.parseFloat(result).toFixed(2)
 					= '<b id="b">Średnio co ' + "<br>" +Math.round(result)  + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
-			} else {
+				}
+				} else {
 
 				//var result = (count/val);
 				
