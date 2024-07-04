@@ -239,7 +239,7 @@
 			var text = '';
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
 			var stat = "statystyczny ";
-			if (Math.round(result) < 1) {
+			if (result < 1) {
 				//result = result.toFixed(10);
 				var result = (count/val);
 				
@@ -261,6 +261,7 @@
 				}else if(person_i18n == "osoba"){
 					osoba = "osoba";
 					stat = "statystyczna ";
+					contact = ' mogła ';
 				}
 				
 				text
