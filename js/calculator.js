@@ -289,7 +289,7 @@
 				// if (tmp.search("e")) {
 				// 	result = result.toFixed(2);
 				// } else {
-				// 	result = result.toPrecision();
+				// 	result = result.toPrecision();s
 				// }
 				// let contact = '';
 				// let osoba = '';
