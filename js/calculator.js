@@ -230,11 +230,11 @@
 			$('#calculator-msg').removeClass('error');
 
 			var count = getNumberOfPeople();
-			console.log(count);
+			//console.log(count);
 			var result = (val / count);
 			//messageResult.hide().text("Wynik: " + result.toFixed(2)).fadeIn('slow');
-			console.log(result);
-			console.log(count / val)
+			//console.log(result);
+			//console.log(count / val)
 
 			var text = '';
 			var person_i18n = aschecked ? 'osoba' : (mchecked ? 'mężczyzna' : 'kobieta');
