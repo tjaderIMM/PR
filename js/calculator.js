@@ -1,5 +1,7 @@
 (function () {
 	const bootonMenu = '<br><div class="d-flex justify-content-between" ><button class="btn btn-secondary btn-lg active" id="remove">Wyczyść  <img src="./img/x.png" alt="" class="img-fluid" style="height:12px"></button><button class="btn btn-secondary btn-lg active copy" id="copy">Skopiuj  <img src="./img/copy-icon.png" alt="" class="img-fluid" style="height:15px" ></button></div>'
+	let isCloseMoreAge = true;
+	let isCloseMoerePeople = true;
 	const k1524 = 1788347; // 22 r. 1870700 
 	const m1524 = 1870519; // 22 r. 1960700
 
@@ -397,17 +399,31 @@
 	$('.more-age-button-js').on('click', function () {
 		console.log("test")
 		let more = document.querySelector('.more-age-js');
-		more.classList.remove("d-none");
+		more.classList.toggle("d-none");
 		let button = document.querySelector('.more-age-button-js');
-		button.classList.add("d-none");
+		if(!isCloseMoreAge){
+			
+			button.innerHTML ="Wiecej";
+		}else{
+			button.innerHTML ="Schowaj";
+		}
+		isCloseMoreAge = !isCloseMoreAge;
+		//button.classList.add("d-none");
 	});
 	$('.more-women-men-more-button-js').on('click', function () {
 		console.log("test");
 		
 		let more = document.querySelector('.more-women-men-more-js');
-		more.classList.remove("d-none");
+		more.classList.toggle("d-none");
 		let button = document.querySelector('.more-women-men-more-button-js');
-		button.classList.add("d-none");
+		if(!isCloseMoerePeople){
+			
+			button.innerHTML ="Wiecej";
+		}else{
+			button.innerHTML ="Schowaj";
+		}
+		isCloseMoerePeople = !isCloseMoerePeople;
+		//button.classList.add("d-none");
 	});
 
 }());
