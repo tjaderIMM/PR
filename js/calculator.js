@@ -403,9 +403,9 @@
 		let button = document.querySelector('.more-age-button-js');
 		if(!isCloseMoreAge){
 			
-			button.innerHTML ="Wiecej";
+			button.innerHTML ="Znam zasięg grupy docelowej";
 		}else{
-			button.innerHTML ="Schowaj";
+			button.innerHTML ="Ukryj dodatkowe opcje";
 		}
 		isCloseMoreAge = !isCloseMoreAge;
 	});
@@ -417,9 +417,9 @@
 		let button = document.querySelector('.more-women-men-more-button-js');
 		if(!isCloseMoerePeople){
 			
-			button.innerHTML ="Wiecej";
+			button.innerHTML ="Znam zasięg grupy docelowej";
 		}else{
-			button.innerHTML ="Schowaj";
+			button.innerHTML ="Ukryj dodatkowe opcje";
 		}
 		isCloseMoerePeople = !isCloseMoerePeople;
 	});
