@@ -1,5 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
+.t-none {
+	display: none !important;
+}
+
 #calculator {
 	display: flex;
 	flex-direction: column;
@@ -415,6 +419,7 @@ navbar-scroll {
 #msg {
 	margin-top: 1rem;
 }
+
 #button-down {
 	border-radius: 16px;
 	font-size: 16px;

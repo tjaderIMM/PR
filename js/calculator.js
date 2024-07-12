@@ -241,8 +241,8 @@
 			var stat = "statystyczny ";
 			if (result < 1) {
 				//result = result.toFixed(10);
-				var result = (count/val);
-				
+				var result = (count / val);
+
 				const tmp = `${result.toPrecision(3)}`;
 				if (tmp.search("e")) {
 					result = result.toFixed(2);
@@ -258,33 +258,33 @@
 					osoba = "Polka";
 					contact = ' mogła ';
 					stat = "statystyczna "
-				}else if(person_i18n == "osoba"){
+				} else if (person_i18n == "osoba") {
 					osoba = "osoba";
 					stat = "statystyczna ";
 					contact = ' mogła ';
 				}
-				
-				if(Math.round(result)==1){
-					text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
-				}else{
 
-				
-
-
-
-
-				text
-					// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
-					// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
-					// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
-					// 	' raz[y]</b> ' + bootonMenu;
-					//Number.parseFloat(result).toFixed(2)
-					= '<b id="b">Średnio co ' + "<br>" +Math.round(result)  + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
-				}
+				if (Math.round(result) == 1) {
+					text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2) + ' raz[y]</b>' + bootonMenu;
 				} else {
 
+
+
+
+
+
+					text
+						// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
+						// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
+						// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
+						// 	' raz[y]</b> ' + bootonMenu;
+						//Number.parseFloat(result).toFixed(2)
+						= '<b id="b">Średnio co ' + "<br>" + Math.round(result) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() + '<br>' + contact + "mieć kontakt z informacją o kampanii " + bootonMenu;
+				}
+			} else {
+
 				//var result = (count/val);
-				
+
 				// const tmp = `${result.toPrecision(3)}`;
 				// if (tmp.search("e")) {
 				// 	result = result.toFixed(2);
@@ -304,15 +304,15 @@
 				// if(result>0.5&&result<0.75){
 				// 	result=2;
 				// }
-				
-				
+
+
 				// text
 				// 	// = (mchecked ? ' Statystyczny ' : ' Statystyczna ') + person_i18n +
 				// 	// 	' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') +
 				// 	// 	'mieć kontakt z informacją o kampanii' + '<br><b id="b">średnio <br>' + result +
 				// 	// 	' raz[y]</b> ' + bootonMenu;
 				// 	= '<b id="b">Średnio co ' + "<br>" + Number.parseFloat(result).toFixed(2) + '</b>' + "<br>" + stat + osoba + " w wieku" + getAgeText2() +'<br>' + contact +"mieć kontakt z informacją o kampanii " + bootonMenu;
-				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2)+ ' raz[y]</b>' + bootonMenu;
+				text = (mchecked ? 'Statystyczny ' : 'Statystyczna ') + person_i18n + ' w wieku' + getAgeText2() + '<br>' + (mchecked ? ' mógł ' : ' mogła ') + 'mieć kontakt z informacją o kampanii<br><b id="b">średnio <br>' + Number.parseFloat(result).toFixed(2) + ' raz[y]</b>' + bootonMenu;
 			};
 
 			messageCtn.hide().html(text).fadeIn('slow');
@@ -394,4 +394,20 @@
 		document.getElementById('all-age').parentElement.classList.remove('active');
 
 	});
+	$('.more-age-button-js').on('click', function () {
+		console.log("test")
+		let more = document.querySelector('.more-age-js');
+		more.classList.remove("d-none");
+		let button = document.querySelector('.more-age-button-js');
+		button.classList.add("d-none");
+	});
+	$('.more-women-men-more-button-js').on('click', function () {
+		console.log("test");
+		
+		let more = document.querySelector('.more-women-men-more-js');
+		more.classList.remove("d-none");
+		let button = document.querySelector('.more-women-men-more-button-js');
+		button.classList.add("d-none");
+	});
+
 }());
