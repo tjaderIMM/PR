@@ -408,7 +408,6 @@
 			button.innerHTML ="Schowaj";
 		}
 		isCloseMoreAge = !isCloseMoreAge;
-		//button.classList.add("d-none");
 	});
 	$('.more-women-men-more-button-js').on('click', function () {
 		console.log("test");
@@ -423,7 +422,6 @@
 			button.innerHTML ="Schowaj";
 		}
 		isCloseMoerePeople = !isCloseMoerePeople;
-		//button.classList.add("d-none");
 	});
 
 }());
