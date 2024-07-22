@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
 .t-none {
-	display: none !important;
+	width: 850px !important;
 }
 
 #calculator {
@@ -77,7 +77,7 @@
 }
 
 #calculator-filters {
-	width: 800px;
+	width: 600px;;
 	max-width: 100%;
 	padding: 5px
 }
