@@ -402,6 +402,7 @@
 		document.querySelector('.more-women-men-more-js').classList.add('d-none');
 		document.querySelector('#more-description').classList.add('d-none');
 		document.querySelector('#def-description').classList.remove('d-none');
+		document.querySelector('#calculator-filters').style.width = '200px';
 		
 	});
 	$('#more-option').on('click', function () {
@@ -411,6 +412,7 @@
 		document.querySelector('.more-women-men-more-js').classList.remove('d-none');
 		document.querySelector('#more-description').classList.remove('d-none');
 		document.querySelector('#def-description').classList.add('d-none');
+		document.querySelector('#calculator-filters').style.width = '600px';
 	});
 
 }());
