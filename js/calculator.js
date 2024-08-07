@@ -396,46 +396,21 @@
 		document.getElementById('all-age').parentElement.classList.remove('active');
 
 	});
-	$('.more-age-button-js').on('click', function () {
-		let more = document.querySelector('.more-age-js');
-		more.classList.toggle("d-none");
-		let button = document.querySelector('.more-age-button-js');
-		let filters = document.querySelector('#calculator-filters');
-		
-		
-		if(!isCloseMoreAge){
-			
-			button.innerHTML ="Znam zasięg grupy docelowej";
-		}else{
-			button.innerHTML ="Ukryj dodatkowe opcje";
-		}
-		if(!isCloseMoreAge){
-			filters.classList.remove("t-none");
-		}else {
-			filters.classList.add("t-none");
-		}
-		isCloseMoreAge = !isCloseMoreAge;
+	$('#def-option').on('click', function () {
+		document.getElementById('calculator').classList.remove('d-none');
+		document.querySelector('.more-age-js').classList.add('d-none');
+		document.querySelector('.more-women-men-more-js').classList.add('d-none');
+		document.querySelector('#more-description').classList.add('d-none');
+		document.querySelector('#def-description').classList.remove('d-none');
 		
 	});
-	$('.more-women-men-more-button-js').on('click', function () {
+	$('#more-option').on('click', function () {
+		document.getElementById('calculator').classList.remove('d-none');
+		document.querySelector('.more-age-js').classList.remove('d-none');
 		
-		let more = document.querySelector('.more-women-men-more-js');
-		more.classList.toggle("d-none");
-		let button = document.querySelector('.more-women-men-more-button-js');
-		let filters = document.querySelector('#calculator-filters');
-		
-		if(!isCloseMoerePeople){
-			button.innerHTML ="Znam zasięg grupy docelowej";
-		}else{
-			button.innerHTML ="Ukryj dodatkowe opcje";
-		}
-		// if(isCloseMoreAge && isCloseMoerePeople){
-		// 	filters.classList.remove("t-none");
-		// }else{
-		// 	filters.classList.add("t-none");
-		// }
-		isCloseMoerePeople = !isCloseMoerePeople;
-		
+		document.querySelector('.more-women-men-more-js').classList.remove('d-none');
+		document.querySelector('#more-description').classList.remove('d-none');
+		document.querySelector('#def-description').classList.add('d-none');
 	});
 
 }());
