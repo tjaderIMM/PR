@@ -29,7 +29,7 @@
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 771px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Montserrat", sans-serif;
@@ -569,7 +569,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .container {
     max-width: 720px;
 	 background: white;
@@ -1008,7 +1008,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -4073,7 +4073,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .navbar-expand-md {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -6283,7 +6283,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .d-md-none {
     display: none !important;
   }
@@ -6763,7 +6763,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .flex-md-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7204,7 +7204,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .float-md-left {
     float: left !important;
   }
@@ -7932,7 +7932,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -8724,7 +8724,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 771px) {
   .text-md-left {
     text-align: left !important;
   }
