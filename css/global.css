@@ -439,9 +439,13 @@ navbar-scroll {
 	
 	#def-option,
 	#more-option {
-		white-space: pre-line !important;
-		padding-bottom: 16px !important;
-		font-size: 13px !important;
+		/* white-space: pre-line !important; */
+		/* padding-bottom: 16px !important; */
+		/* font-size: 13px !important; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 
 	.pricing1 {
